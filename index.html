@@ -37,15 +37,15 @@
         </div>
 
         <div class="todo-body">
-          <div class="tasks">
-            <div class="task">
+          <div class="tasks task-body">
+            <!-- <div class="task">
               <input type="checkbox" id="task-1" />
               <label for="task-1">
                 <span class="custom-checkbox"></span>
                 record todo list video
               </label>
             </div>
-            <!-- /task-1 -->
+            /task-1
 
             <div class="task">
               <input type="checkbox" id="task-2" />
@@ -54,7 +54,7 @@
                 another task
               </label>
             </div>
-            <!-- /task-2 -->
+            /task-2
 
             <div class="task">
               <input type="checkbox" id="task-3" />
@@ -63,27 +63,39 @@
                 a third task
               </label>
             </div>
-            <!-- /task-3 -->
+            /task-3 -->
           </div>
 
           <div class="new-task-creator">
-            <form action="">
+            <form class="new-task-form" action="">
               <input
                 type="text"
-                class="new task"
+                class="new task new-task-form-input"
                 placeholder="new task name"
                 aria-label="new task name"
               />
-              <button class="btn create" aria-label="create new task">+</button>
+              <button
+                class="btn create new-task-btn"
+                aria-label="create new task"
+              >
+                +
+              </button>
             </form>
           </div>
 
           <div class="delete-stuff">
-            <button class="btn delete">Clear completed tasks</button>
-            <button class="btn delete">Delete list</button>
+            <button class="btn delete clear-btn">Clear completed tasks</button>
+            <button class="btn delete del-btn">Delete list</button>
           </div>
         </div>
       </div>
     </div>
+    <template id="task-template"
+      ><div class="task">
+        <input type="checkbox" />
+        <label>
+          <span class="custom-checkbox"></span>
+        </label></div
+    ></template>
   </body>
 </html>
